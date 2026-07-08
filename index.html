@@ -193,7 +193,7 @@
         <a href="#vitrine" style="display:inline-block;background:transparent;border:1.5px solid rgba(255,255,255,0.25);color:rgba(255,255,255,0.65);font-family:'Plus Jakarta Sans',sans-serif;font-size:14px;font-weight:700;padding:13px 32px;border-radius:100px;text-decoration:none;transition:all 0.2s;" onmouseover="this.style.borderColor='rgba(255,255,255,0.5)';this.style.color='white'" onmouseout="this.style.borderColor='rgba(255,255,255,0.25)';this.style.color='rgba(255,255,255,0.65)'">comprar combos separadamente ou</a>
       </div>
     </div>
-    <div class="caminhos-grid" style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;align-items:stretch;">
+    <div class="caminhos-grid" style="display:grid;grid-template-columns:1fr;gap:24px;align-items:stretch;">
 
       <!-- Card 1: 7 Combos Canecas -->
       <a href="https://payfast.greenn.com.br/agrepjg/offer/imwygX?cupom=GALEGA100OFF&ch_id=140906" target="_blank" style="text-decoration:none;display:flex;flex-direction:column;">
@@ -532,7 +532,7 @@
   .prova-social-masonry { column-count: 1 !important; }
 }
 @media (max-width: 720px) {
-  .caminhos-grid { grid-template-columns: repeat(2,minmax(0,1fr)) !important; gap: 10px !important; }
+  .caminhos-grid { grid-template-columns: 1fr !important; gap: 18px !important; }
   .caminhos-grid > a { min-width: 0 !important; }
   .caminhos-grid h3 { font-size: 13px !important; line-height: 1.2 !important; }
   .caminhos-grid p { font-size: 11px !important; line-height: 1.35 !important; }
@@ -554,7 +554,7 @@
   .combo-grid { grid-template-columns: 1fr !important; }
 }
 @media (max-width: 420px) {
-  .caminhos-grid { gap: 8px !important; }
+  .caminhos-grid { grid-template-columns: 1fr !important; gap: 12px !important; }
   .caminhos-grid h3 { font-size: 12px !important; }
   .caminhos-grid p { display: none !important; }
   .caminhos-grid span { font-size: 10px !important; }
@@ -587,6 +587,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   padding: 14px 24px 12px;
   animation: pulse-glow 2.2s ease-in-out infinite, bounce-subtle 3s ease-in-out infinite;
   opacity: 0;
@@ -619,6 +620,9 @@
   letter-spacing: -0.3px;
   display: flex;
   align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
   gap: 7px;
 }
 .btn-flutuante .linha3 {
@@ -631,6 +635,8 @@
   gap: 8px;
   flex-wrap: wrap;
   justify-content: center;
+  text-align: center;
+  width: 100%;
 }
 .btn-flutuante .linha3 .preco-riscado {
   text-decoration: line-through;
@@ -669,5 +675,9 @@
 })();
 </script>
 
+
+<style>
+  .caminhos-grid { grid-template-columns: 1fr !important; }
+</style>
 </body>
 </html>
